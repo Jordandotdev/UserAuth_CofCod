@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using UserAuth.application;
 
 namespace UserAuth
 {
@@ -16,7 +17,8 @@ namespace UserAuth
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Login login = new Login();
+            Application.Run(login);
         }
     }
 }
