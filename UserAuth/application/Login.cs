@@ -27,10 +27,10 @@ namespace UserAuth.application
             {
                 if(userData.AuthenticateUser(user))
                 {
+                    ActiveForm.Hide();
                     Home home = new Home();
                     home.Show();
                     MessageBox.Show("Login successful");
-                    Close();
                 }
                 else
                 {
